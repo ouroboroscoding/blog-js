@@ -1,0 +1,50 @@
+{
+	"__sql__": {
+		"auto_primary": "UUID()",
+		"changes": [ "user" ],
+		"create": [ "_creator", "_created", "published", "category" ],
+		"db": "blog",
+		"host": "blog",
+		"indexes": {
+			"_creator": null,
+			"_created": null,
+			"category": null,
+			"published": null
+		},
+		"primary": "_id",
+		"table": "blog_post",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_unicode_ci"
+	},
+
+	"__name__": "Blog_Post",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_creator": {
+		"__type__": "uuid"
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "not null default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"published": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "null default 0"
+		}
+	},
+
+	"category": {
+		"__type__": "uuid"
+	}
+}
