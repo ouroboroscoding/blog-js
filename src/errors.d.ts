@@ -10,3 +10,5 @@
 export { errors as body } from '@ouroboros/body';
 export declare const STORAGE_ISSUE = 1400;
 export declare const NOT_AN_IMAGE = 1401;
+export declare const POSTS_ASSOCIATED = 1402;
+export declare const MINIMUM_LOCALE = 1403;
