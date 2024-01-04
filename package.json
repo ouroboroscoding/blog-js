@@ -1,6 +1,6 @@
 {
 	"name": "@ouroboros/blog",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "Package to handle the blog service.",
 	"main": "src/index.js",
 	"types": "src/index.d.ts",
