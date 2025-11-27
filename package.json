@@ -1,20 +1,22 @@
 {
 	"name": "@ouroboros/blog",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Package to handle the blog service.",
-	"main": "src/index.js",
-	"types": "src/index.d.ts",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
 	"scripts": {
 		"build": "tslint -p tsconfig.json && tsc",
-		"clean": "rm src/*.js src/*.d.ts",
-		"for_local": "npm install; tslint -p tsconfig.json && tsc; rm -Rf node_modules",
+		"clean": "rm lib/*",
 		"test": "echo \"Error: no test specified.\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ouroboroscoding/blog-js.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"blog",
+		"localisation"
+	],
 	"author": "Chris Nasr <chris@ouroboroscoding.com>",
 	"license": "CUSTOM",
 	"bugs": {
@@ -23,9 +25,9 @@
 	"devDependencies": {
 		"tslint": "^6.1.3",
 		"tslint-config-prettier": "^1.18.0",
-		"typescript": "^4.8.3"
+		"typescript": "^5.9.2"
 	},
 	"peerDependencies": {
-		"@ouroboros/body": "^1.0.3"
+		"@ouroboros/body": "^1.2.2"
 	}
 }
